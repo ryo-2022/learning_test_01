@@ -1,1 +1,3 @@
-# learning_test_01
+- For the search key, two existing columns are concatenated and a new one is created.
+- In Step 5, only the single sheet that matches the search key will be printed, or if "all" or "ALL" is entered as the search key, all single sheets will be printed.
+- At the end of Step 5, the Excel file is closed without saving.
