@@ -20,8 +20,11 @@ if myVal == "all" or myVal == "ALL" :
     #シートを選択
     sheet_one = book.WorkSheets("港区_区役所一覧")
     sheet_one.Select()
+    #最終行を取得
+    xlUp = -4162
+    lastrow = sheet_one.Cells(sheet.Rows.Count, 1).End(xlUp).Row
     #全ての行を印刷
-    for i in range(7) :
+    for i in range(lastrow - 1) :
         #検索キーを選択
         myKey = sheet_one.Cells(i+2, 1).Value
         sheet.Range("F2").Value = myKey
