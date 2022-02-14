@@ -25,7 +25,6 @@ sheet.insert_cols(1)
 sheet.cell(row=1, column=1).value = "検索キー"
 #最終行を取得
 lastrow=sheet.max_row
-print("lastrow" + str(lastrow))
 for i in range(lastrow - 1) :
     val1 = sheet.cell(row=i+2, column=2).value
     val2 = sheet.cell(row=i+2, column=3).value
